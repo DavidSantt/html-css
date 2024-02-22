@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagem</h1>
+    <p>Logo abaixo você verá uma imagem flexivel, ou seja está imagem e adaptavel a celulares tablets e TVs/Monitores </p>
+
+<picture>
+    <source media="(min-width: 800px)" srcset="imagens/g.png" type="image/png">
+    <source media="(min-width: 600px)" srcset="imagens/m.png" type="image/png">
+    <img src="imagens/p.png" alt="Imagem flexivel">
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a reproduzir áudio em HTML5</p>
+    <audio preload="metadata" controls autoplay loop>
+       <source src="midia/Point - Counterpoint - John Patitucci.mp3" type="audio/mpeg">
+       <source src="midia/Point - Counterpoint - John Patitucci.ogg" type="audio/ogg">
+       <source src="midia/Point - Counterpoint - John Patitucci.wav" type="audio/wav">
+       <p>Infelizmente o seu navegador não pôde rodar o áudio <a href="midia/Point - Counterpoint - John Patitucci.mp3" >Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</picture>
+</body>
+</html>

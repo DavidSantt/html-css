@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        a:active {
+            color: brown;
+        }
+        a::after {
+            content: ' link';
+            color: black;
+        }
+        .esp::after {
+           content: ' 😊'; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" rel="external" target="_blank">Instagram</a></li>
+        <li><a href="https://www.instagram.com/" rel="external" target="_blank">Youtube</a></li>
+        <li><a href="https://www.tiktok.com/pt-BR/" rel="external" target="_blank" class="esp">TikTok</a></li>
+    </ul>
+</body>
+</html>
