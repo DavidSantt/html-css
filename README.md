@@ -3,4 +3,4 @@
 
 Aprendendo a gerenciar repositorio
 
-<a href=" https://davidsantt.github.io/html-css/exercicios/ex001/">Exexutar</a>
+<a href=" https://davidsantt.github.io/html-css/exercicios/ex001/">Executar o Exercicio ex001</a>
