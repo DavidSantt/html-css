@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #conteiner {
+        background-image: url(imagens-cap19/espaco.jpg);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        position: relative;
+        height: 96vh;
+
+    }
+
+    #conteudo {
+        background-image: url(imagens-cap19/astronauta.png);
+        background-size: 100% 100%;
+
+        position: absolute;
+        height: 50vh;
+        width: 400px;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+</style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
