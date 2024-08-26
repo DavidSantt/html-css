@@ -1,0 +1,85 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    background-image:url(imagens/papel-de-parede-minimalista-azul_889056-12779.avif);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    height: 100vh;
+    padding: 10px;
+    background-color: black;
+}
+
+#telefone {
+    background-image:url(imagens/frame-iphone.png);
+    background-size: 100% 100%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 627px;
+    width: 311px;
+
+    transform: translate(-50%, -50%);
+}
+
+#tela {
+    background-image:url(imagens/tela-home.jpg);
+    background-size: 100% 100%;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    height: 472px;
+    width: 267px;
+
+    transform: translate(-50%, -49.5%);
+}
+
+#insta {
+    background-size: 100% 100%;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    height: 50px;
+    width: 50px;
+
+}
+
+#face {
+    background-size: 100% 100%;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 90%;
+    top: 20%;
+    height: 50px;
+    width: 50px;
+
+    
+}
+
+#git {
+    background-size: 100% 100%;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    height: 50px;
+    width: 50px;
+}
