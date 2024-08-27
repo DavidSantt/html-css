@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(244, 244, 244), rgb(220, 220, 220), rgb(154, 154, 154));
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        p {
+            padding-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste de Formulário</h1>
+    </header>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="name" id="iname" required maxlength="70" placeholder="ex:Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="ex:0 a 10" step="0.5">
+        </p>
+
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="date" name="mes" id="imes" required>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
