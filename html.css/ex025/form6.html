@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(244, 244, 244), rgb(220, 220, 220), rgb(154, 154, 154));
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        p {
+            padding-bottom: 20px;
+            
+        }
+
+        fieldset {
+            padding: 10px;
+            color: #005400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste Foemulário</h1>
+    </header>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#005400">
+        </p>
+        <p>
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="0">
+        </p>
+        <p>
+            <label for="ifoto">Escolha sua Foto:</label>
+            <input type="file" name="foto" id="ifoto">            
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

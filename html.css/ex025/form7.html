@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(244, 244, 244), rgb(220, 220, 220), rgb(154, 154, 154));
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        p {
+            padding-bottom: 20px;
+            
+        }
+
+        fieldset {
+            padding: 10px;
+            color: #005400;
+        }
+
+        input {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Teste Formulário</h1></header>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+
+                <option value="" selected>Escolha</option>
+                <option value="ba">Bahia</option>
+                <option value="ma">Maranhão</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="ipro">Profissão:</label>
+            <input type="text" name="pro" id="ipro" list="listipro" size="30">
+                
+                <datalist id="listipro">
+                    <option >Técnico em Meio Ambiente</option>
+                    <option >Médico</option>
+                    <option >Engenheiro</option>
+                    <option >Gari</option>
+                    <option >Professor</option>
+                </datalist>
+
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
