@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(244, 244, 244), rgb(220, 220, 220), rgb(154, 154, 154));
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        p {
+            padding-bottom: 20px;
+            
+        }
+
+        fieldset {
+            padding: 10px;
+            color: #005400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste Foemulário</h1>
+    </header>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+           <label for="iano">Em que ano você nasceu?</label>
+           <input type="number" name="ano" id="iano" min="1800" max="2024" oninput="calcIdade()">
+        </p>
+        
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+
+</body>
+</html>

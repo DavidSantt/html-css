@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(244, 244, 244), rgb(220, 220, 220), rgb(154, 154, 154));
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        p {
+            padding-bottom: 20px;
+            
+        }
+
+        fieldset {
+            padding: 10px;
+            color: #005400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste Foemulário</h1>
+    </header>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+          <label for="in1">Número 1:</label>
+          <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isom.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isom.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isom">Soma:</label>
+            <output name="som" id="isom">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
