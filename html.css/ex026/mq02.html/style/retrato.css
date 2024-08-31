@@ -3,6 +3,7 @@
 /* Configuração Landscape */
 
 body {
-    background: black url(../ima);
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
 

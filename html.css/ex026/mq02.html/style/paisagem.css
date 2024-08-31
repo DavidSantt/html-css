@@ -3,6 +3,9 @@
 /* Configuração Portrait */
 
 body {
-    background-color: rgb(10, 10, 84);
-    color: rgb(255, 255, 255);
+    background: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
