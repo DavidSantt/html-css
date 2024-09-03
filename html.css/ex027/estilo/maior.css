@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    header {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    nav > a {
+        margin-left: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(59, 59, 59);
+        padding: 5px;
+        border-radius: 7px;
+        display: inline;
+        font-size: 20px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        font-size: 22px;
+        background-color: black;
+        transition: 0.3s;
+    }
+
+    span#burguer {
+        display: none;
+    }
+}
