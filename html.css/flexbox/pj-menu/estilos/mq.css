@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
-@media screen {
-    
+@media screen and (min-width: 768px) {
+    header {
+        height: 150px;
+    }
+
+    header a {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    menu {
+        margin-top: 30px;
+    }
 }

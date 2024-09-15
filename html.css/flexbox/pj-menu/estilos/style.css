@@ -14,7 +14,7 @@ body {
 header {
     margin-bottom: 30px;
     background-color: rgb(31, 31, 147);
-    height: 310px;
+    height: 320px;
 }
 
 header h1 {
@@ -27,7 +27,7 @@ header h1 {
 
 header menu {
     text-align: center;
-    
+    wi
 }
 
 header a {
@@ -36,6 +36,10 @@ header a {
     background-color: blue;
     padding: 5px;
     border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    width: 90vw;
+    margin-left: 5vw;
 }
 
 a:hover {
