@@ -15,7 +15,7 @@ header {
     color: white;
     padding: 10px;
     margin-bottom: 20px;
-    height: 20vh;
+    
 
     display: flex;
     flex-flow: row wrap;
@@ -33,6 +33,7 @@ header menu {
     display: flex; 
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
 
     margin-left: 10px;
 }
@@ -59,4 +60,27 @@ main {
     margin: 20px;
     padding: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.177);
+}
+
+@media (max-width: 500px) {
+    header menu {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 100vh;
+        margin-right: 100px;
+        
+    }
+
+    header h1 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 100vh;
+        
+    }
 }
