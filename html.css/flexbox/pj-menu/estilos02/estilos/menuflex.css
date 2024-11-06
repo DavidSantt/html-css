@@ -18,10 +18,22 @@ header {
     color: white;
     margin-bottom: 20px;
     padding: 15px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    flex: 0 0 140px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+nav {
+    display: flex;
 }
 
 nav a {
@@ -32,6 +44,11 @@ nav a {
     border-radius: 10px;
     text-align: center;
     margin-left: 5px;
+    text-shadow: 2px 2px 2px black;
+
+    flex: 0 1 80px;
+
+   
 }
 
 main {
@@ -45,3 +62,25 @@ main {
 main h2 {
     margin-bottom: 15px;
 }
+
+@media screen and (max-width: 500px) {
+    header {
+        flex-flow: column wrap;
+    }
+
+    nav {
+        flex-flow: column wrap;
+    }
+
+    nav a {
+        width: 200px;
+        margin-bottom: 10px;
+
+        flex: auto;
+    }
+
+    header h1 {
+        flex-basis: 20px;
+    }
+}
+
